@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="style.css">
 
 
-
     <!-- Schema.org for Google -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -57,129 +56,27 @@
 </head>
 
 <body>
+    <header>
+        <h2>author</h2>
+        <h1>title</h1>
+    </header>
+    <div class="hero">
 
-    <nav class="hide-on-small-only teal darken-1">
-        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-up"><i class="material-icons">menu</i></a>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo right">
-                <img alt="jojoes dog grooming logo" class="nav-logo" src="https://res.cloudinary.com/fump/image/upload/v1541785822/jojoes-logo-white.svg">
-            </a>
-        </div>
-    </nav>
+        <section id="box1" class="large">
 
-    <main>
-        <div id="page1" class="page--container">
+        </section>
 
-            <!-- SIDE MENU -->
+        <section id="box2" class="small">
 
-            <ul id="slide-out" class="sidenav hide-on-small-only">
-                <a href="#page1"><img alt="jojoes dog grooming logo" class="page1--logo-padding" src="https://res.cloudinary.com/fump/image/upload/v1541784624/jojoes_logo_colour.svg"></a>
-                <li>
-                    <a href="#page1"><i class="material-icons">home</i>home</a>
-                </li>
-                <li>
-                    <a href="#services"><i class="material-icons">content_cut</i>services</a>
-                </li>
-                <li>
-                    <a href="#contact"><i class="material-icons">place</i>find us</a>
-                </li>
-                <li>
-                    <a href="#form"><i class="material-icons">email</i>contact us</a>
-                </li>
-                <li>
-                    <a href="gallery.html"><i class="material-icons">photo_library</i>gallery</a>
-                </li>
-            </ul>
+        </section>
 
-            <!-- BOTTOM MENU BUTTONS -->
+        <section id="box3" class="small">
 
-            <div class="phone-menu-background teal darken-2 hide-on-med-and-up z-depth-2"></div>
-            <a href="tel:+441482813211" class="btn-floating btn-large green home--phone-position hide-on-med-and-up waves-effect waves-light">
-                <i class="large material-icons ">phone</i>
-            </a>
-            <div class="fixed-action-btn hide-on-med-and-up">
-                <a class="btn-floating btn-large purple waves-effect waves-light">
-                    <i class="large material-icons">menu</i>
-                </a>
-                <ul class="black-text">
-                    <li class=" ">
-                        <a href="#page1" class="btn-floating green waves-effect waves-light">
-                            <i class="material-icons">home</i>
-                        </a>home
-                    </li>
-                    <li>
-                        <a href="#services" class="btn-floating yellow darken-1 waves-effect waves-light">
-                            <i class="material-icons">content_cut</i>
-                        </a>services
-                    </li>
-                    <li>
-                        <a href="#contact" class="btn-floating teal waves-effect waves-light">
-                            <i class="material-icons">place</i>
-                        </a>find us
-                    </li>
-                    <li>
-                        <a href="#form" class="btn-floating blue waves-effect waves-light">
-                            <i class="material-icons">email</i>
-                        </a>contact us
-                    </li>
-                    <li>
-                        <a href="gallery.html" class="btn-floating pink waves-effect waves-light">
-                            <i class="material-icons">photo_library</i>
-                        </a>gallery
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </section>
 
+    </div>
 
-        <!-- home page -->
-
-
-
-
-
-        <footer id="footer-container">
-            <p id="footer--copyright">
-                &copy; 2010
-                <script>
-                    new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());
-                </script>,
-                Company name.
-            </p>
-            <div id="facebook-container">
-                <a href="https://www.facebook.com/JojoesDogGroomingService"><img alt="facebook-logo" id="facebook" src="images/facebook-white.svg"
-                        alt="facebook-logo">
-                </a>
-            </div>
-            <p id="footer--contact-fump">
-                Website design by <a href="https://fump.co.uk">FUMP</a>
-            </p>
-        </footer>
-
-        <script src="script.js"></script>
-
-        <script>
-            M.AutoInit();
-        </script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.fixed-action-btn');
-                var instances = M.FloatingActionButton.init(elems, {
-                    direction: 'up',
-                    hoverEnabled: false
-                });
-            });
-        </script>
-
-        <script type="text/javascript">
-            var cl = cloudinary.Cloudinary.new({
-                cloud_name: "fump"
-            });
-            // replace 'demo' with your cloud name in the line above 
-            cl.responsive();
-        </script>
-
+    <script src="script.js"></script>
 
 </body>
 
