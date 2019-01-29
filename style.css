@@ -124,6 +124,7 @@ header {
     grid-area: image;
     height: 60%;
 }
+
 .large img {
     grid-area: image;
     height: 20%;
@@ -196,8 +197,8 @@ header {
 
 .large {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 'image title''text text';
+    grid-template-columns: 35% 35% 1fr;
+    grid-template-areas: 'image title .''text text .';
     position: fixed;
     bottom: 0px;
     right: 0px;
