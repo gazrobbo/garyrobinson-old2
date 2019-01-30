@@ -119,7 +119,7 @@ header {
 
 .small {
     text-align: center;
-    transition: 0.4s;
+    /* transition: 0.1s; */
     position: fixed;
     width: 150px;
     max-width: 20vw;
