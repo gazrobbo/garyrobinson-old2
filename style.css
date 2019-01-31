@@ -53,7 +53,7 @@ h6 {
 header {
     width: 100vw;
     position: fixed;
-    height: 50px;
+    height: 40px;
 
     /* background-color: #272a38; */
     background: #a7cfdf;
@@ -122,8 +122,8 @@ header {
     text-align: center;
     /* transition: 0.1s; */
     position: fixed;
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     border-radius: 10px;
     z-index: 500;
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
@@ -177,9 +177,9 @@ header {
     bottom: 0px;
     right: 0px;
     width: 85vw;
-    width: calc(100vw - 50px);
+    width: calc(100vw - 30px);
     height: 85vh;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     border-radius: 30px 0% 0% 0% / 30px 0% 0% 0%;
     grid-row: 2 / 5;
     grid-column: 2 / 4;
@@ -195,8 +195,8 @@ header {
 }
 
 .medium-box {
-    left: 25px;
-    top: 75px;
+    left: 15px;
+    top: 55px;
    display: grid;
     position: fixed;
     width: 150px;
@@ -232,6 +232,11 @@ header {
         max-width: calc(25vh - 45px);
         max-height: calc(25vh - 45px);
     }
+    
+    .medium-box {
+        max-width: 30vh;
+       max-height: 30vh;
+   }
 
     #box1.small {
         bottom: 70vh;
@@ -266,7 +271,11 @@ header {
         transform: translatex(50%);
         max-width: calc(25vw - 10px);
         max-height: calc(25vw - 10px);
+    }
 
+    .medium-box {
+         max-width: 30vw;
+        max-height: 30vw;
     }
 
     #box1.small {
