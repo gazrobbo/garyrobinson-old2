@@ -1,10 +1,10 @@
 :root {
-    --main-colour: #7c2796;
-    --light-colour: #a4acd8;
+    --main-colour: #23538a;
+    --light-colour: #a7cfdf;
     --main-red: #FC0a12;
     --main-green: #1dc38e;
     --main-text: #F2FF00;
-    
+
 
 }
 
@@ -102,7 +102,9 @@ header {
 }
 
 
-header, .medium-box, .hero   {
+header,
+.medium-box,
+.hero {
     background: var(--light-colour);
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, var(--light-colour) 0%, var(--main-colour) 100%);
@@ -204,6 +206,14 @@ header, .medium-box, .hero   {
     z-index: 500;
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
     background-color: var(--main-colour);
+}
+
+hidden {
+    left: -200px;
+}
+
+#medium1-show {
+    
 }
 
 .medium-box img {

@@ -6,11 +6,13 @@ let mainColor = document.documentElement;
 
 
 
+
 box1.onclick = function () {
     largeBox[0].className = 'small';
     box1.className = 'large';
     mainColor.style.setProperty('--main-colour', '#23538a');
     mainColor.style.setProperty('--light-colour', '#a7cfdf');
+
 };
 
 box2.onclick = function () {
