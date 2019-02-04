@@ -9,10 +9,13 @@
 }
 
 body {
+    /* font-size: 1.2rem; */
     font-family: 'Lato', sans-serif;
     max-width: 100vw;
+    color: var(--main-text);
 }
-
+p,
+li,
 h1,
 h2,
 h3,
@@ -25,9 +28,15 @@ h6 {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+p,
+li {
+line-height: 1.5em;
+text-align: center;
+}
+
 .hero {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 50% 25%;
@@ -87,15 +96,15 @@ header {
 }
 
 #box4 {
-    background: #a7cfdf;
+    background: #a7dfd9;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #a7cfdf 0%, #23538a 100%);
+    background: -moz-linear-gradient(-45deg, #a7dfd9 0%, #23858a 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #a7cfdf 0%, #23538a 100%);
+    background: -webkit-linear-gradient(-45deg, #a7dfd9 0%, #23858a 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #a7cfdf 0%, #23538a 100%);
+    background: linear-gradient(135deg, #a7dfd9 0%, #23858a 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7dfd9', endColorstr='#23858a', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -125,13 +134,13 @@ header,
 }
 
 .small h3 {
-    grid-area: title;
+
     font-size: 11px;
     padding: 10px 0px 5px 0px;
 }
 
 .small img {
-    grid-area: image;
+
     height: 50%;
     max-width: 90%;
 }
@@ -153,15 +162,14 @@ header,
 }
 
 .large img {
-    grid-area: image;
-    height: 80%;
+   width:1px;
     visibility: hidden;
 }
 
 .text-panel {
     /* grid-area: text; */
     top: 50px;
-    padding: 60px 20px 70px 10px;
+    padding: 60px 10px 00px 10px;
     position: absolute;
     transition: .8s;
     width: calc(100vw - 100px);
@@ -177,10 +185,8 @@ header,
     position: absolute;
     top: 70px;
     left: 30px;
-    /* width: 85vw; */
     width: calc(100vw - 30px);
-    /* height: 85vh; */
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     border-radius: 30px 0% 0% 0% / 30px 0% 0% 0%;
     grid-row: 2 / 5;
     grid-column: 2 / 4;
@@ -232,8 +238,8 @@ header,
         right: 15px;
         width: 100px;
         height: 100px;
-        max-width: calc(25vh - 45px);
-        max-height: calc(25vh - 45px);
+        max-width: calc(25vh - 25px);
+        max-height: calc(25vh - 25px);
     }
 
     .medium-box {
@@ -289,6 +295,7 @@ header,
     .large h3 {
         padding: 50px;
     }
+    
 }
 
 /* Phone */

@@ -35,8 +35,8 @@ box3.onclick = function () {
 box4.onclick = function () {
     largeBox[0].className = 'small';
     this.className = 'large';
-    mainColor.style.setProperty('--main-colour', '#23538a');
-    mainColor.style.setProperty('--light-colour', '#a7cfdf');
+    mainColor.style.setProperty('--main-colour', '#23858a');
+    mainColor.style.setProperty('--light-colour', '#a7dfd9');
     shownBox[0].classList.remove("medium-show");
     medium4.className = 'medium-box medium-show';
 
