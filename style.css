@@ -3,7 +3,7 @@
     --light-colour: #a7cfdf;
     --main-red: #FC0a12;
     --main-green: #1dc38e;
-    --main-text: #F2FF00;
+    --main-text: #white;
 
 
 }
@@ -88,7 +88,7 @@ header {
     /* IE6-9 fallback on horizontal gradient */
 }
 
-#box1 {
+#box4 {
     background: #a7cfdf;
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, #a7cfdf 0%, #23538a 100%);
@@ -154,18 +154,28 @@ header,
     visibility: hidden;
 }
 
-.small .text-panel {
-    visibility: hidden;
-}
+
 
 .text-panel {
-    grid-area: text;
+    /* grid-area: text; */
+    top: 50px;
     padding: 20px 20px 70px 20px;
+    position: absolute;
+}
+
+.small .text-panel {
+    left: 100vw;
+
+}
+
+.large .text-panel {
+    left: 10vw;
+
 }
 
 
 .small:hover {
-    bottom: 13px;
+    top: calc(100vh - 62px);
     box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -174,8 +184,8 @@ header,
     grid-template-columns: 45% 45% 1fr;
     grid-template-rows: 50px 1fr;
     grid-template-areas: 'image title .''text text .';
-    position: fixed;
-    bottom: 0px;
+    position: absolute;
+    top: 70px;
     right: 0px;
     width: 85vw;
     width: calc(100vw - 30px);
@@ -199,7 +209,7 @@ header,
     left: -200px;
     top: 55px;
     display: grid;
-    position: fixed;
+    position: absolute;
     width: 150px;
     height: 150px;
     border-radius: 10px;
@@ -232,11 +242,14 @@ header,
     .small {
         transform: translatey(50%);
         right: 15px;
+        width: 100px;
+        height: 100px;
         max-width: calc(25vh - 45px);
         max-height: calc(25vh - 45px);
     }
 
     .medium-box {
+
         max-width: 30vh;
         max-height: 30vh;
     }
@@ -247,19 +260,19 @@ header,
 
 
     #box1.small {
-        bottom: 70vh;
+        top: 10vh;
     }
 
     #box2.small {
-        bottom: 50vh;
+        top: 30vh;
     }
 
     #box3.small {
-        bottom: 30vh;
+        top: 50vh;
     }
 
     #box4.small {
-        bottom: 10vh;
+        top: 70vh;
     }
 
     .large {
@@ -267,7 +280,7 @@ header,
     }
 
     .text-panel {
-        grid-area: text;
+        /* grid-area: text; */
         padding: 20px 20px 20px 20px;
     }
 }
@@ -276,7 +289,7 @@ header,
 
 @media only screen and (max-width: 599px) {
     .small {
-        bottom: 15px;
+        top: calc(100vh - 65px);
         transform: translatex(50%);
         max-width: calc(25vw - 10px);
         max-height: calc(25vw - 10px);
