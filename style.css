@@ -3,14 +3,14 @@
     --light-colour: #a7cfdf;
     --main-red: #FC0a12;
     --main-green: #1dc38e;
-    --main-text: #white;
+    --main-text: white;
 
 
 }
 
 body {
     font-family: 'Lato', sans-serif;
-
+    max-width: 100vw;
 }
 
 h1,
@@ -22,6 +22,7 @@ h6 {
     color: var(--main-text);
     padding: 0px;
     margin: 0px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero {
@@ -30,7 +31,6 @@ h6 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 50% 25%;
-
 }
 
 header {
@@ -44,7 +44,6 @@ header {
     color: white;
     justify-items: center;
     align-items: center;
-
 }
 
 #box1 {
@@ -173,14 +172,13 @@ header,
 }
 
 .large {
-
     grid-template-areas: 'image title .''text text .';
     position: absolute;
     top: 70px;
-    right: 0px;
-    width: 85vw;
+    left: 30px;
+    /* width: 85vw; */
     width: calc(100vw - 30px);
-    height: 85vh;
+    /* height: 85vh; */
     height: calc(100vh - 70px);
     border-radius: 30px 0% 0% 0% / 30px 0% 0% 0%;
     grid-row: 2 / 5;
@@ -289,7 +287,6 @@ header,
 
     .large h3 {
         padding: 50px;
-
     }
 }
 
@@ -322,4 +319,4 @@ header,
 
     #box4.small {
         right: 12.5vw;
-    }
+    }};
