@@ -110,7 +110,8 @@ header {
 
 header,
 .medium-box,
-.hero {
+.hero,
+#form-container {
     background: var(--light-colour);
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, var(--light-colour) 0%, var(--main-colour) 100%);
@@ -121,6 +122,14 @@ header,
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--light-colour)', endColorstr='var(--main-colour)', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
+}
+#form-container {
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.form-box {
+    opacity: 0.5;
 }
 
 .small {
