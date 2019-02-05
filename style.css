@@ -13,6 +13,7 @@ body {
     font-family: 'Lato', sans-serif;
     max-width: 100vw;
     color: var(--main-text);
+    overflow-x: hidden;
 }
 p,
 li,
@@ -39,7 +40,7 @@ text-align: center;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 70px 50% 25%;
 }
 
 header {
@@ -56,7 +57,8 @@ header {
     opacity: 0.7;
 }
 
-#box1 {
+#box1,
+#largebox1 {
     background: #a7cfdf;
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, #a7cfdf 0%, #23538a 100%);
@@ -69,7 +71,8 @@ header {
     /* IE6-9 fallback on horizontal gradient */
 }
 
-#box2 {
+#box2,
+#largebox2 {
     background: #a6dda8;
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, #a6dda8 0%, #248c35 100%);
@@ -82,7 +85,8 @@ header {
     /* IE6-9 fallback on horizontal gradient */
 }
 
-#box3 {
+#box3,
+#largebox3 {
     background: #a4acd8;
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, #a4acd8 0%, #7c2796 100%);
@@ -95,7 +99,8 @@ header {
     /* IE6-9 fallback on horizontal gradient */
 }
 
-#box4 {
+#box4,
+#largebox4 {
     background: #a7dfd9;
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, #a7dfd9 0%, #23858a 100%);
@@ -111,7 +116,8 @@ header {
 header,
 .medium-box,
 .hero,
-#form-container {
+#form-container,
+#footer-box {
     background: var(--light-colour);
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, var(--light-colour) 0%, var(--main-colour) 100%);
@@ -143,20 +149,15 @@ header,
 }
 
 .small h3 {
-
     font-size: 11px;
     padding: 10px 0px 5px 0px;
 }
 
 .small img {
-
     height: 50%;
     max-width: 90%;
 }
 
-.small .text-panel {
-    left: 200vw;
-}
 
 .small:hover {
     top: calc(100vh - 73px);
@@ -175,37 +176,36 @@ header,
     visibility: hidden;
 }
 
-.text-panel {
-    /* grid-area: text; */
-    top: 50px;
-    padding: 60px 10px 00px 10px;
-    position: absolute;
-    transition: .8s;
-    width: calc(100vw - 100px);
-    transition-timing-function: ease-out;
-}
-
-.large .text-panel {
-    left: 30px;
-}
-
 .large {
-    grid-template-areas: 'image title .''text text .';
-    position: absolute;
-    top: 70px;
-    left: 30px;
+    display: grid;
+    grid-template-areas: 'image title''text text';
+    grid-template-columns: 100px 1fr;
+    grid-template-rows:100px 1fr 80px ;
+    position: relative;
+    top: 0px;
+    left: 250vw;
     width: calc(100vw - 30px);
     min-height: calc(100vh - 70px);
     border-radius: 30px 0% 0% 0% / 30px 0% 0% 0%;
     grid-row: 2 / 5;
-    grid-column: 2 / 4;
+    grid-column: 1 / 4;
     transform-origin: 50% 50%;
-    transition-timing-function: ease-out;
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), -2px -2px 15px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    visibility: hidden;
+}
+
+.large-show {
+    left: 30px;
+    visibility: visible;
+    transition: .6s;
+    transition-timing-function: ease-out;
+}
+
+.text-panel {
+    grid-area: text;
+    padding: 20px;
+    transition: .8s;
+    transition-timing-function: ease-out;
 }
 
 .medium-box {
@@ -223,19 +223,31 @@ header,
 
 .large,
 .medium-show {
-    transition: 0.4s;
+    
 }
 
 
 .medium-show {
     left: 15px;
     transition-timing-function: ease-out;
+    transition: 0.4s;
 }
 
 .medium-box img {
     place-self: center;
     max-height: 90%;
     max-width: 90%;
+}
+
+#social-links {
+    padding: 20px;
+    text-align: center;
+    color: var(--main-text);
+}
+
+#social-links a {
+    padding: 10px;
+    font-size: 1.5rem;
 }
 
 
@@ -261,7 +273,6 @@ header,
     .medium-show {
         transition: 0.5s;
     }
-
 
     #box1.small {
         top: 10vh;
@@ -296,15 +307,22 @@ header,
     }
 
     .text-panel {
-        top: 180px;
-        padding: 20px 20px 20px 20px;
+    
         width: calc(100vw - 220px);
     }
 
     .large h3 {
         padding: 50px;
     }
-    
+
+    .large {
+    grid-template-areas: ' title .''text .';
+    grid-template-columns: 1fr 150px;
+    grid-template-rows:150px 1fr ;
+}
+#footer-box {
+   visibility: hidden;
+}
 }
 
 /* Phone */
@@ -336,4 +354,15 @@ header,
 
     #box4.small {
         right: 12.5vw;
-    }};
+    }
+
+    #footer-box {
+        height: 80px;
+        width: 100vw;
+        position: fixed;
+        bottom: 0px;
+
+        box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 2px 2px 15px rgba(0, 0, 0, 0.2);
+        opacity: 0.7;
+            }
+};
