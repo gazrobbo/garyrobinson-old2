@@ -242,12 +242,13 @@ header,
 #social-links {
     padding: 20px;
     text-align: center;
-    color: var(--main-text);
+    
 }
 
 #social-links a {
     padding: 10px;
     font-size: 1.5rem;
+    color: var(--main-text);
 }
 
 
