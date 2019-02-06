@@ -176,10 +176,10 @@ header,
 }
 
 
-.small:hover {
+/* .small:hover {
     top: calc(100vh - 73px);
     box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .large h3 {
     grid-area: title;
@@ -304,6 +304,10 @@ header,
 
     #box4.small {
         top: 70vh;
+    }
+
+    .small:hover {
+        box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.5);
     }
 
     #box1.small:hover {
