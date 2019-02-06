@@ -3,12 +3,13 @@ let medBox = document.getElementsByClassName('medium-box');
 let largeBox = document.getElementsByClassName('large');
 let shownBox = document.getElementsByClassName('medium-show');
 let shownBoxLarge = document.getElementsByClassName('large-show');
+let pressedButton = document.getElementsByClassName('pressedButton');
 let mainColor = document.documentElement;
 
 
 box1.onclick = function () {
-    // largeBox[0].className = 'small';
-    // this.className = 'large';
+    pressedButton[0].className = 'small';
+    this.className = 'small pressedButton';
     mainColor.style.setProperty('--main-colour', '#23538a');
     mainColor.style.setProperty('--light-colour', '#a7cfdf');
     shownBox[0].classList.remove("medium-show");
@@ -18,8 +19,8 @@ box1.onclick = function () {
 };
 
 box2.onclick = function () {
-    // largeBox[0].className = 'small';
-    // this.className = 'large';
+    pressedButton[0].className = 'small';
+    this.className = 'small pressedButton';
     mainColor.style.setProperty('--main-colour', ' #248c35');
     mainColor.style.setProperty('--light-colour', '#a6dda8');
     shownBox[0].classList.remove("medium-show");
@@ -29,8 +30,8 @@ box2.onclick = function () {
 };
 
 box3.onclick = function () {
-    // largeBox[0].className = 'small';
-    // this.className = 'large';
+    pressedButton[0].className = 'small';
+    this.className = 'small pressedButton';
     mainColor.style.setProperty('--main-colour', ' #7c2796');
     mainColor.style.setProperty('--light-colour', '#a4acd8');
     shownBox[0].classList.remove("medium-show");
@@ -40,8 +41,8 @@ box3.onclick = function () {
 };
 
 box4.onclick = function () {
-    // largeBox[0].className = 'small';
-    // this.className = 'large';
+    pressedButton[0].className = 'small';
+    this.className = 'small pressedButton';
     mainColor.style.setProperty('--main-colour', '#23858a');
     mainColor.style.setProperty('--light-colour', '#a7dfd9');
     shownBox[0].classList.remove("medium-show");

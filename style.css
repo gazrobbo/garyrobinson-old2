@@ -15,6 +15,7 @@ body {
     color: var(--main-text);
     overflow-x: hidden;
 }
+
 p,
 li,
 h1,
@@ -29,10 +30,20 @@ h6 {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
 p,
 li {
-line-height: 1.5em;
-text-align: center;
+    line-height: 1.5em;
+    text-align: center;
 }
 
 .hero {
@@ -129,11 +140,13 @@ header,
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--light-colour)', endColorstr='var(--main-colour)', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
+
 #form-container {
     padding: 10px;
     border-radius: 7px;
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
+
 .form-box {
     opacity: 0.5;
 }
@@ -146,6 +159,10 @@ header,
     border-radius: 10px;
     z-index: 500;
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pressedButton {
+    box-shadow: inset -3px -3px 20px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 0.9);
 }
 
 .small h3 {
@@ -172,7 +189,7 @@ header,
 }
 
 .large img {
-   width:1px;
+    width: 1px;
     visibility: hidden;
 }
 
@@ -180,7 +197,7 @@ header,
     display: grid;
     grid-template-areas: 'image title''text text';
     grid-template-columns: 100px 1fr;
-    grid-template-rows:100px 1fr 80px ;
+    grid-template-rows: 100px 1fr 80px;
     position: relative;
     top: 0px;
     left: 250vw;
@@ -222,9 +239,7 @@ header,
 }
 
 .large,
-.medium-show {
-    
-}
+.medium-show {}
 
 
 .medium-show {
@@ -242,7 +257,7 @@ header,
 #social-links {
     padding: 20px;
     text-align: center;
-    
+
 }
 
 #social-links a {
@@ -308,7 +323,7 @@ header,
     }
 
     .text-panel {
-    
+
         width: calc(100vw - 220px);
     }
 
@@ -317,13 +332,14 @@ header,
     }
 
     .large {
-    grid-template-areas: ' title .''text .';
-    grid-template-columns: 1fr 150px;
-    grid-template-rows:150px 1fr ;
-}
-#footer-box {
-   visibility: hidden;
-}
+        grid-template-areas: ' title .''text .';
+        grid-template-columns: 1fr 150px;
+        grid-template-rows: 150px 1fr;
+    }
+
+    #footer-box {
+        visibility: hidden;
+    }
 }
 
 /* Phone */
@@ -362,8 +378,9 @@ header,
         width: 100vw;
         position: fixed;
         bottom: 0px;
-
         box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 2px 2px 15px rgba(0, 0, 0, 0.2);
         opacity: 0.7;
-            }
-};
+    }
+}
+
+;
