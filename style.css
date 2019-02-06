@@ -38,6 +38,13 @@ h4,
 h5,
 h6 {
     font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
 }
 
 p,
@@ -152,6 +159,7 @@ header,
 }
 
 .small {
+    transition-duration: .2s;
     text-align: center;
     position: fixed;
     width: 60px;
@@ -176,16 +184,16 @@ header,
 }
 
 
-/* .small:hover {
-    top: calc(100vh - 73px);
-    box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.5);
-} */
 
 .large h3 {
     grid-area: title;
     padding: 20px;
     text-align: center;
     font-size: 1.5rem;
+}
+
+#largebox1 h3 {
+    font-size: 2.5rem;
 }
 
 .large img {
@@ -311,19 +319,19 @@ header,
     }
 
     #box1.small:hover {
-        top: 9vh;
+        top: calc(10vh-2px);
     }
 
     #box2.small:hover {
-        top: 29vh;
+        top: calc(30vh-2px);
     }
 
     #box3.small:hover {
-        top: 49vh;
+        top: calc(50vh-2px);
     }
 
     #box4.small:hover {
-        top: 69vh;
+        top: calc(70vh-2px);
     }
 
     .text-panel {
@@ -336,8 +344,8 @@ header,
     }
 
     .large {
-        grid-template-areas: ' title .''text .';
-        grid-template-columns: 1fr 150px;
+        grid-template-areas: ' . title . ''text . ';
+        grid-template-columns: 150px 1fr 150px;
         grid-template-rows: 150px 1fr;
     }
 
@@ -352,8 +360,8 @@ header,
     .small {
         top: calc(100vh - 70px);
         transform: translatex(50%);
-        max-width: calc(25vw - 10px);
-        max-height: calc(25vw - 10px);
+        max-width: calc(25vw - 12px);
+        max-height: calc(25vw - 12px);
     }
 
     .medium-box {
