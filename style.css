@@ -154,6 +154,10 @@ header,
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+.form-container-text {
+    width: 180px;
+}
+
 .form-box {
     opacity: 0.5;
 }
@@ -334,17 +338,17 @@ header,
         top: calc(70vh-2px);
     }
 
-    .text-panel {
+    /* .text-panel {
 
         width: calc(100vw - 220px);
-    }
+    } */
 
     .large h3 {
         padding: 50px;
     }
 
     .large {
-        grid-template-areas: ' . title . ''text . ';
+        grid-template-areas: ' . title . ''. text . ';
         grid-template-columns: 150px 1fr 150px;
         grid-template-rows: 150px 1fr;
     }
