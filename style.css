@@ -149,6 +149,7 @@ header,
 }
 
 #form-container {
+
     padding: 10px;
     border-radius: 7px;
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
@@ -160,6 +161,7 @@ header,
 
 .form-box {
     opacity: 0.5;
+    width: 200px;
 }
 
 .small {
@@ -197,7 +199,11 @@ header,
 }
 
 #largebox1 h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+.text-panel ol li {
+    padding: 5px;
 }
 
 .large img {
@@ -232,9 +238,10 @@ header,
 
 .text-panel {
     grid-area: text;
-    padding: 20px;
+    padding: 0px 40px;
     transition: .8s;
     transition-timing-function: ease-out;
+    place-self: center;
 }
 
 .medium-box {
@@ -267,13 +274,13 @@ header,
 }
 
 #social-links {
-    padding: 20px;
+    padding: 30px 0px;
     text-align: center;
 
 }
 
 #social-links a {
-    padding: 10px;
+    padding: 5px;
     font-size: 1.5rem;
     color: var(--main-text);
 }
@@ -345,7 +352,9 @@ header,
 
     .large h3 {
         padding: 50px;
+        font-size: 2.5rem;
     }
+    
 
     .large {
         grid-template-areas: ' . title . ''. text . ';
@@ -355,6 +364,9 @@ header,
 
     #footer-box {
         visibility: hidden;
+    }
+    .text-panel p, .text-panel ol {
+        font-size: 1.2rem;
     }
 }
 
