@@ -65,12 +65,15 @@ header {
     width: 100vw;
     position: fixed;
     height: 40px;
+    -webkit-box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), -2px -2px 15px rgba(0, 0, 0, 0.2);
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), -2px -2px 15px rgba(0, 0, 0, 0.2);
     z-index: 600;
     display: grid;
     grid-template-areas: "author grid";
     color: white;
     justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     opacity: 0.7;
 }
@@ -79,9 +82,7 @@ header {
 #largebox1 {
     background: #a7cfdf;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #a7cfdf 0%, #23538a 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #a7cfdf 0%, #23538a 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #a7cfdf 0%, #23538a 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -93,9 +94,7 @@ header {
 #largebox2 {
     background: #a6dda8;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #a6dda8 0%, #248c35 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #a6dda8 0%, #248c35 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #a6dda8 0%, #248c35 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -107,9 +106,7 @@ header {
 #largebox3 {
     background: #a4acd8;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #a4acd8 0%, #7c2796 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #a4acd8 0%, #7c2796 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #a4acd8 0%, #7c2796 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -121,9 +118,7 @@ header {
 #largebox4 {
     background: #a7dfd9;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #a7dfd9 0%, #23858a 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #a7dfd9 0%, #23858a 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #a7dfd9 0%, #23858a 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -138,9 +133,7 @@ header,
 #footer-box {
     background: var(--light-colour);
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, var(--light-colour) 0%, var(--main-colour) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, var(--light-colour) 0%, var(--main-colour) 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, var(--light-colour) 0%, var(--main-colour) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -152,6 +145,7 @@ header,
 
     padding: 10px;
     border-radius: 7px;
+    -webkit-box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -165,6 +159,7 @@ header,
 }
 
 .small {
+    -webkit-transition-duration: .2s;
     transition-duration: .2s;
     text-align: center;
     position: fixed;
@@ -172,10 +167,12 @@ header,
     height: 60px;
     border-radius: 10px;
     z-index: 500;
+    -webkit-box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .pressedButton {
+    -webkit-box-shadow: inset -3px -3px 20px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 0.9);
     box-shadow: inset -3px -3px 20px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 0.9);
 }
 
@@ -224,7 +221,9 @@ header,
     border-radius: 30px 0% 0% 0% / 30px 0% 0% 0%;
     grid-row: 2 / 5;
     grid-column: 1 / 4;
+    -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+    -webkit-box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), -2px -2px 15px rgba(0, 0, 0, 0.2);
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), -2px -2px 15px rgba(0, 0, 0, 0.2);
     visibility: hidden;
 }
@@ -232,14 +231,18 @@ header,
 .large-show {
     left: 30px;
     visibility: visible;
+    -webkit-transition: .6s;
     transition: .6s;
+    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
 
 .text-panel {
     grid-area: text;
     padding: 0px 40px;
+    -webkit-transition: .8s;
     transition: .8s;
+    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     place-self: center;
 }
@@ -253,6 +256,7 @@ header,
     height: 100px;
     border-radius: 10px;
     z-index: 500;
+    -webkit-box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
     box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 3px 3px 20px rgba(255, 255, 255, 0.5), 3px 3px 10px rgba(0, 0, 0, 0.5);
     background-color: var(--main-colour);
 }
@@ -263,7 +267,9 @@ header,
 
 .medium-show {
     left: 15px;
+    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -290,6 +296,7 @@ header,
 
 @media only screen and (min-width: 600px) {
     .small {
+        -webkit-transform: translatey(50%);
         transform: translatey(50%);
         right: 15px;
         width: 100px;
@@ -306,6 +313,7 @@ header,
     }
 
     .medium-show {
+        -webkit-transition: 0.5s;
         transition: 0.5s;
     }
 
@@ -326,6 +334,7 @@ header,
     }
 
     .small:hover {
+        -webkit-box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.5);
         box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.5);
     }
 
@@ -377,6 +386,7 @@ header,
 @media only screen and (max-width: 599px) {
     .small {
         top: calc(100vh - 70px);
+        -webkit-transform: translatex(50%);
         transform: translatex(50%);
         max-width: calc(25vw - 12px);
         max-height: calc(25vw - 12px);
@@ -408,6 +418,7 @@ header,
         width: 100vw;
         position: fixed;
         bottom: 0px;
+        -webkit-box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 2px 2px 15px rgba(0, 0, 0, 0.2);
         box-shadow: inset -3px -3px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.5), 2px 2px 15px rgba(0, 0, 0, 0.2);
         opacity: 0.7;
     }
